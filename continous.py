@@ -12,7 +12,7 @@ from lightgbm import LGBMRegressor
 import matplotlib.pyplot as plt
 
 # Load data
-df = pd.read_csv('/Users/kassywang/Documents/Summer Project/R/without outliers/Clean_complete_data_by_dipping_catergory.csv')
+df = pd.read_csv('/Users/kassywang/Documents/Summer Project/R/without outliers/continuous.csv')
 df = df.dropna(subset=["ratio_before", "ratio_after"])  # ensure targets are available
 df.columns = df.columns.str.lower()
 
